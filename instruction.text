@@ -1,0 +1,2 @@
+Create a first component "Header" h1 which contains shop name.
+Integrate it in JTML element with id #root.
