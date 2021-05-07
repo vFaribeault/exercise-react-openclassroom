@@ -21,20 +21,29 @@
 	<script type="text/babel">
     // Create a header component
 		function Header() {
-			const header = "la maison jungle";
-		  return (<h1>{ header.toUpperCase() }</h1>)
+			const title = "La maison jungle";
+		  return (<h1>{ title.toUpperCase() }</h1>)
 		}
 
 		// Create a cart component
 		function Cart() {
-			const monstera = "Un monstera";
-			const lierre = "Un lierre";
-			
-		  return (<h1>{ header.toUpperCase() }</h1>)
+			const priceMonstera = 8;
+			const priceIvy = 10;
+			const priceBunchOfFlowers = 15;
+		  return (
+				<div>
+					<h2>My cart</h2>
+						<ul>
+							<li>Monstera : { priceMonstera }€</li>
+							<li>Ivy : { priceIvy }€</li>
+							<li>Bunch of flowers : { priceBunchOfFlowers }€</li>
+						</ul>
+						<p>Total price : { priceMonstera + priceIvy + priceBunchOfFlowers }€</p>
+				</div>)
 		}
 
 		// Generate the react component at the right place -->
-		ReactDOM.render(<React.Fragment><Header /><Cart /></React.Fragment>, document.getElementById("root"))
+		ReactDOM.render(<div><Header /><Cart /></div>, document.getElementById("root"))
 	</script>
 
 </body>
