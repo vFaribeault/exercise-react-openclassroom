@@ -1,2 +1,10 @@
-Create a first component "Header" h1 which contains shop name.
-Integrate it in JTML element with id #root.
+1. Create a 1st component "Header" h1 which contains shop name in lowercase.
+Transform it in uppercase with JS.
+
+2. Create a 2nd component "Cart" h2 below the header, which contains :
+- 3 plants : a monstera, an ivy and a bunch of flowers.
+- a variable for each plant price : 8€, 10€ and 15€S
+- a list with the name and price of the 3 articles.
+- the 3 articles total price.
+
+Integrate these components in the HTML element with id #root.
