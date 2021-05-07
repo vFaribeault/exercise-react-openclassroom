@@ -11,17 +11,30 @@
 
   <!-- CDN link for React -->
 	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	
 	<!-- CDN link for React DOM -->
 	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	
 	<!-- CDN link for Babel -->
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	
 	<script type="text/babel">
-    // Create a functional component
+    // Create a header component
 		function Header() {
-		  return (<h1>La maison jungle</h1>)
+			const header = "la maison jungle";
+		  return (<h1>{ header.toUpperCase() }</h1>)
 		}
+
+		// Create a cart component
+		function Cart() {
+			const monstera = "Un monstera";
+			const lierre = "Un lierre";
+			
+		  return (<h1>{ header.toUpperCase() }</h1>)
+		}
+
 		// Generate the react component at the right place -->
-		ReactDOM.render(<Header />, document.getElementById("root"))
+		ReactDOM.render(<React.Fragment><Header /><Cart /></React.Fragment>, document.getElementById("root"))
 	</script>
 
 </body>
